@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Nav */
+.Contenedor-navit {
+	width: 100%;
+	height: 60px;
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+}
+
+.Contenedor-navit .logo__it {
+	font-size: 17px;
+	color: white;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 15px;
+	margin-left: 20px;
+	text-decoration: none;
+}
+
+.menu-it  li {
+	display: inline-block;
+	color: white;
+	margin-top: 19px;
+	margin-right: 35px;
+}
+
+.menu-it li .list-it{
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+}
+
+/* Index */
+
+.titulo_indexit {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.p-itindex {
+	text-align: center;
+	font-size: 23px;
+	margin-bottom: 30px;
+}
+
+#footer_it {
+	background: url("../imagenes/44.jpg");
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.redsocial_it img {
+	margin-left: 40px;
+	
+}
+
+.desarrollo_it {
+	color: white;
+	font-size: 20px;
+}
+
+.contactofooter_it {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.whatsapp_it, .gmail_it {
+	display: flex;
+    align-items: center;
+    color: white;
+	margin-top: 5px;
+    margin-right: 20px;
+    letter-spacing: 1px;
+}
+
+
+
+.whatsapp_it img {
+    margin-top: 3.2px;
+
+}
+
+.whatsapp_it h4 {
+	margin-right: 110px;
+	margin-left: 5px;
+}
+
+
+/* Nosotros */
+
+.h1-itnosotros {
+	font-size: 50px;
+	text-align: center;
+}
+
+main .p-itnosotros {
+	font-size: 30px;
+	text-align: center;
+}
+
+.img-itnosotros {
+	margin: auto;
+}
+
+
+
+/* Página Servicios */
+
+.h1-itservicios {
+	font-size: 50px;
+	text-align: center;
+}
+
+.h2-itservicios {
+	text-align: center;
+}	
+
+.grilla {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-template-rows: repeat(2, auto);
+	justify-content: space-around;
+	margin-top: 50px;
+}
+
+.p-it {
+	text-align: center;
+	font-size: 30px;
+}
+
+.ul-it {
+	margin-top: 50px;
+	text-align: start;
+	line-height: 2em;
+	border: 1px solid black;
+	color: white;
+	background-color: black;
+}
+
+.ul-it li {
+	margin-left: 25px;
+}
+
+
+/* Página reparaciones */
+
+.h1-reparaciones {
+	text-align: center;
+}
+
+.h2-reparaciones {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.flex-reparaciones {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	grid-template-rows: repeat(3, auto);
+	grid-row-gap: 20px;
+	justify-content: center;
+	align-items: center;
+	margin-left: 120px;
+	margin-bottom: 30px;
+}
+
+.texto-reparaciones {
+	margin-left: 40px;
+	border: 1px solid black;
+	background-color: brown;
+	color: white;
+}
+
+/* MEDIA QUERYS */
+
+@media only screen and (max-width: 480px){
+
+/* Media Nav */
+
+.Contenedor-navit {
+	flex-direction: column;
+	height: 100px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.menu-it li .list-it {
+	margin-left: 4px;
+	font-size: 0.9rem;
+	word-spacing: 10;
+}
+
+/* Index */ 
+
+.p-itindex {
+	font-size: 1rem;
+	margin: 10px;
+}
+
+/* footer */
+
+#footer_it {
+	flex-direction: column;
+}
+
+.redsocial_it {
+	margin-top: 10px;
+}
+
+/* Pág nosotros */
+
+main .p-itnosotros {
+	font-size: 20px;
+	margin: 10px;
+}
+
+.img-itnosotros {
+	width: 300px;
+}
+
+/* Pág servicios */
+
+.grilla {
+	grid-template-columns: repeat(2, auto);
+	grid-template-rows: repeat(3, auto);
+}
+
+.grilla img {
+	width: 150px;
+}
+
+.p-it {
+	font-size: 20px;
+	margin: 10px;
+}
+
+/* Pág reparaciones */ 
+
+	.flex-reparaciones {
+		display: block;
+		justify-items: center;
+		align-items: center;
+	}
+
+	.flex-reparaciones img {
+		width: 450px;
+		height: 300px;
+	}
+
+	.texto-reparaciones {
+		
+	}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+/* 
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+li{
+	color: whitesmoke;
+	font-size: 25px;
+	font-weight: 400;
+	background-color: black;
+	list-style: none;
+	font-family: 'Fira Sans Condensed', sans-serif;
+} 
+
+p{
+	color:  blueviolet;
+	font-size: 20px;
+	font-weight: 200;
+	background-color: orange;
+	font-family: 'Bebas Neue', cursive;
+} 
+
+a{
+	color: inherit;
+} 
+
+.texto li {
+	color: red;
+} 
+
+.menu{
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.menu li {
+	display: inline-block;
+}
+
+.grilla{
+	width: 600px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 350px 350px;
+	grid-template-rows: 200px 200px;
+	
+}
+
+.grilla > div {
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	border: 1px solid skyblue;
+	background-color: ghostwhite;
+
+}
+
+.flex {
+	width: 1000px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.flex .item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 10px;
+	margin-top: 40px; 
+} */
